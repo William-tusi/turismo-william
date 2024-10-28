@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Soacha, Cundinamarca</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Descubre Soacha</h1>
+        <div class="texto">
+        ¡Un destino turístico lleno de historia y naturaleza, donde viviras experiencias
+        y sensaciones inugualables!
+        </div>
+    </header>
+    
+    <section class="highlights">
+        <h2>Atracciones Populares :</h2>
+        <div class="card">
+            <h3 onclick="toggleContent(this)"> Catedral de Soacha :</h3>
+            <p>Ubicada en la direccion "Cl 12 6-60", esta ubicada en el parque
+            de Soacha centro, este lugar es un gran atractivo turistico ya que
+            su diseño y simbolismo es muy reconocido por los habitantes de la localidad.</p>
+            <img src="https://horariomisa.co/wp-content/uploads/2023/12/unnamed-file-2232-jpg.webp">
+        </div>
+        <br>
+        <div class="card">
+            <h3 onclick="toggleContent(this)">Boquemonte Reserva Natural :</h3>
+            <p>Queda ubicado en el "Km 4.8, Variante Soacha - La Mesa Rural, Soacha, Cundinamarca"
+            este es un destino turistico ya que por su paisaje, entorno natural, y sus animales se
+            puede tener una experiencia inolvidable.</p>
+            <img src="https://cdn0.matrimonio.com.co/review/6260/original/640/jpg/335314.jpeg">
+        </div>
+        <br>
+        <div class="card">
+            <h3 onclick="toggleContent(this)">Casa Museo Tequendama :</h3>
+            <p>Ubicado por la via "Bogota - Mesitas a 18.8 Km" aqui puedes obsevar las maravillosas vistas,
+            los mitos y leyendas del salto, y las expocisiones que haya en ese momento en el museo.</p>
+            <img src="https://www.semana.com/resizer/v2/KE7GEW2AO5H3LCSOZ6GZBQJGWE.jpg?auth=caf5d2658dd058527ee2e36460f2f9f16b05711370107c3347d33505e9709ece">
+        </div>
+        <br>
+        <div class="card">
+            <h3 onclick="toggleContent(this)">Museo Arqueologico de Soacha :</h3>
+            <p>Ubicado en la direccion "Carrera 7 N°14-70", Aqui encontraras mas de
+            300 piezas arqueologias provenientes de diferentes materiales y texturas</p>
+            <img src="https://www.semana.com/resizer/v2/IC2F7RYFKJAEZL7WXSZ2NOEPZE.jpg?auth=bb4c1600897cb9aa916e0551f6381c84c3723e3e7f54b9b91495effc9ad94ff7">
+        </div>
+        <br>
+        <br>
+    </section>
+    <footer>
+        <div class="texto">
+        Visita Soacha y vive una experiencia única. ¡Te esperamos! John William Rodriguez
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleContent(header) {
+        const content = header.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+</html>
